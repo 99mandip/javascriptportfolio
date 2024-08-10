@@ -1,92 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mandip - Developer Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
         }
-body{
-    background-color: rgb(0, 0, 33);
-    color: white;
-    font-family: 'Poppins', sans-serif;
-}   
-    nav{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 80px;
-        background-color: rgb(18, 18, 62);
-    }
-    nav ul{
-        display: flex;
-        justify-content: center;
-    }
-    nav ul li{
-        list-style: none;
-        margin: 0 23px;
 
-    }
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
 
-    nav ul li a{
-        text-decoration: none;
-        color: white;
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
 
-    }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
 
-    nav ul li a:hover{
-        color: rgb(153, 153, 226);
-        font-size: 1.04 rem;
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
 
-    }
+        }
 
-    .left{
-        font-size: 1.5rem;
+        nav ul li a {
+            text-decoration: none;
+            color: white;
 
-    }
-    
-    .firstSection{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 80px 0;
-    }
+        }
 
-    .firstSection > div{
-        width: 30%;
-    }
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.04 rem;
 
-    .leftSection{
-        
-        font-size: 3rem;
-        
-    }
+        }
 
-    .rightSection img{
-        width: 80%;
-    }
-    
-    .purple{
-        color: rgb(170, 107, 228);
-    }
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
 
-    #element{
-        color: rgb(126, 14, 231);  
-    }
+        .left {
+            font-size: 1.5rem;
 
-    .secondSection{
-        max-width: 80vw;
-        margin: auto;
-    }
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+
+        .leftSection .btn{
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .text-gray {
+            color: gray;
+
+        }
+
+        #element {
+            color: rgb(126, 14, 231);
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul{
+            list-style: none;
+        }
+
+        .footer > div{
+            width: 223px;
+        }
+
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+
+        }
+
+        @media screen and (max-width: 2000px) {
+            body{
+               /* background-color: red; 
+            }
+            .firstSection{
+               flex-direction: column-reverse;
+            }
+        }
 
     </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -106,27 +168,54 @@ body{
     <main>
         <section class="firstSection">
             <div class="leftSection">
-                Hola, My name is <span class="purple">Mandip</span> 
+                Hola, My name is <span class="purple">Mandip</span>
                 <div>and I am a passionate</div>
-                
+
                 <span id="element"></span>
+                <div class="buttons">
+                   <button class="btn">Download Resume</button> 
+                   <button class="btn">Visit Github</button>
+                </div>
             </div>
             <div class="rightSection">
-                <img src="images/mandip.jpg" alt="">  
+                <img src="images/mandip.jpg" alt="">
             </div>
         </section>
-
-        <section class="secionSection">
-            <h1>Past Experience</h1>
+        <div class="box"></div>
         </section>
     </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Mandip's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+
+            </div>
+            <div class="footer-fourth">
+
+            </div>
+            <div class="footer-rights">
+               Copyright &#169; Mandip Karki | All rights reserved
+            </div>
+        </div>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-          strings: ['Web Developer', 'Upcoming Software Engineer'],
-          typeSpeed: 50,
+            strings: ['Web Developer', 'Upcoming Software Engineer'],
+            typeSpeed: 50,
         });
-      </script>
-    
+    </script>
+
 </body>
+
 </html>
